@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="form" class="form">
+        <h2>Registration</h2> 
+        <div class="form-control ">
+            <label for="username">Username</label>
+            <input type="text" id="username" 
+            placeholder="Enter username">
+            <small>Error</small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" 
+            placeholder="Enter Email">
+            <small>Error</small>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" 
+            placeholder="Enter Password">
+            <small>Error</small>
+        </div>
+        <div class="form-control">
+            <label for="password2">Confrim Password</label>
+            <input type="password" id="password2" 
+            placeholder="Enter Password One more time">
+            <small>Error</small>
+        </div>
+        <label for="Region">Select Your Region</label>
+        <select name="Region" id="Region">
+            <option value="America">USE</option>
+            <option value="Russia">Russia</option>
+            <option value="Georgia" id="Geo">Georgia</option>
+            <option value="Italy">Italy</option>
+            <option value="Germany">Germany</option>
+        </select>
+        <div id="Container-Rad"></div>
+        <button onclick="clicker()" id="Button">Submit</button>
+        </form>
+    </div>
+
+    <script src="./mn.js"></script>
+</body>
+</html>

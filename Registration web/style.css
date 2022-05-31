@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --success-color:#2ecc71;
+    --error-color:#e74c3c;
+}
+body{
+    background-color: #f9fafb;
+    font-family: 'Times New Roman', Times, serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    margin: 0;
+}
+.container{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width: 400px;
+}
+.form{
+    padding: 30px 40px;
+
+}
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form-control{
+    margin-bottom:10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.success input{
+    border-color:var(--success-color);
+
+}
+.form-control.error input{
+    border-color: var(--error-color);
+}
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+select{
+    padding:10px 2px;
+    border: 2px solid #777;
+    margin: 0px;
+}
+form button{
+    cursor: pointer;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+
+
+/* -------------- Burgur styling ----------------- */
+.contjq{
+    width: 100%;
+}
+.btn
+{
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 70px;
+  padding: 16px;
+  background: #2ecc71;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.btn .bar1, .btn .bar2, .btn .bar3
+{
+  height: 4px;
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
+/* ----------- close btn ------------- */
+.close-btn
+{
+  top: 0;
+  right: 0;
+  height: 70px;
+  width: 70px;
+  padding: 20px;
+  background: #3498db;
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.close-btn .bar1
+{
+  transform: rotate(-130deg);
+  height: 4px;
+  width: 90%;
+  display: block;
+  background: #000;
+  position: absolute;
+}
+
+.close-btn .bar2
+{
+  display: none;
+}
+
+.close-btn .bar3
+{
+  transform: rotateZ(130deg);
+  height: 4px;
+  width: 90%;
+  display: block;
+  background: #000;
+  position: absolute;
+}
+
+/* ------------- Hide menu ----------- */
+.menu
+{
+  display: none;
+}
+
+/* ------------------- Menu styling --------------- */
+.open-menu
+{
+  width: 100%;
+  height: 100vh;
+  background: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 5s all;
+}
+
+.open-menu ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.open-menu ul li
+{
+  list-style: none;
+  padding: 6px;
+}
+
+.open-menu ul li a
+{
+  text-decoration: none;
+  font-size: 5vw;
+  font-weight: 800;
+  color: #000;
+}
+
+.open-menu ul li a:hover
+{
+  border-bottom: 5px solid #000;
+  transition: 0.2s all;
+}
